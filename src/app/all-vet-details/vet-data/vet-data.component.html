@@ -1,0 +1,94 @@
+<div class="vets-body">
+    <!-- Code Here -->
+    <div class="vet-top">
+      <div class="vet-container">
+        <div class="vet-left">
+          <p>All Vets</p>
+        </div>
+        <div class="vet-right">
+          <div class="vet-search">
+            <mat-card class="search_mat">
+              <input type="text" id="search" placeholder="Search">
+            </mat-card>
+          </div>
+          <div class="vet-filter">
+            <mat-card class="filter_mat">
+              <input type="text" id="filter" placeholder="Filter">
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vet-middle">
+      <div class="middle-top">
+        <div class="middle-container">
+          <div class="middle-inner">
+            <p>High Rated Vets</p>
+          </div>
+        </div>
+      </div>
+      <div class="middle-bottom">
+        <mat-card class="mid-container" *ngFor="let vet of recentvet"><a [routerLink]="['/vetdetails']">
+          <div class="mid-container-body">
+            <div class="vet-image">
+              <img class="image-size" src="/assets/Images/Doctor.jpg" alt="">
+            </div>
+            <div class="vet-data">
+              <div class="name">
+                Dr. {{vet.name}}
+              </div>
+              <div class="speciality">
+                {{vet.speciality}}
+              </div>
+              <div class="phone">
+                <div class="ph-left">
+                  Mobile:
+                </div> 
+                <div class="ph-right">
+                  {{vet.mobileNo}}
+                </div> 
+              </div>
+            </div>
+          </div>
+          </a>
+        </mat-card>
+      </div>
+    </div>
+    <div class="vet-bottom">
+      <div class="bottom-top">
+        <div class="bottom-container">
+          <div class="bottom-inner">
+            <p>AllVets</p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bottom">
+        <div class="single-container" *ngFor="let vet of vets">
+          <mat-card class="bot-container">
+            <div class="bot-container-body">
+              <div class="vets-image">
+                <img class="image-sizes" src="/assets/Images/Doctor.jpg" alt="">
+              </div>
+              <div class="vets-data">
+                <div class="name">
+                  Dr. {{vet.name}}
+                </div>
+                <div class="speciality">
+                  {{vet.speciality}}
+                </div>
+                <div class="phone">
+                  <div class="ph-left">
+                    Mobile:
+                  </div> 
+                  <div class="ph-right">
+                    {{vet.mobileNo}}
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+        
+      </div>
+    </div>
+  </div>

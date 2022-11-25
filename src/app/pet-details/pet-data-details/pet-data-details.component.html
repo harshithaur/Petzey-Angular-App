@@ -1,0 +1,422 @@
+<div class="main-body">
+    <div class="main-container">
+        <div class="back-arrow">
+            <span>
+                <a class="back_app" [routerLink]="['/allpet']">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Appointments
+                </a>
+            </span>
+        </div>
+        <div class="container-main">
+            <mat-card class="container">
+                <div class="main-left">
+                    <div class="main-left-top">
+                        <div class="main-left-top-left">
+                            <img class="image-size" src="/assets/Images/dog.jpg" alt="">
+                        </div>
+                        <div class="main-left-top-right">
+                            <div class="label1">
+                                Patient
+                            </div>
+                            <div class="label2">
+                                {{pet.name}}
+                            </div>
+                            <div class="label3">
+                                {{pet.species}}, Afghan Hound
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-left-bottom">
+                        <div class="main-left-bottom-left">
+                            <div class="label-container">
+                                <div class="label-left">
+                                    Gender
+                                </div>
+                                <div class="label-middle">
+                                    :
+                                </div>
+                                <div class="label-right">
+                                    {{pet.gender}}
+                                </div>
+                            </div>
+                            <div class="label-container">
+                                <div class="label-left">
+                                    Age
+                                </div>
+                                <div class="label-middle">
+                                    :
+                                </div>
+                                <div class="label-right">
+                                    {{pet.age}}
+                                </div>
+                            </div>
+                            <div class="label-container">
+                                <div class="label-left">
+                                    Blood Group
+                                </div>
+                                <div class="label-middle">
+                                    :
+                                </div>
+                                <div class="label-right">
+                                    {{pet.blood}}
+                                </div>
+                            </div>
+                            <div class="label-container">
+                                <div class="label-left">
+                                    Date of Birth
+                                </div>
+                                <div class="label-middle">
+                                    :
+                                </div>
+                                <div class="label-right">
+                                    {{pet.dob}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-left-bottom-right">
+                            <div class="label-container">
+                                <div class="label-left">
+                                    Allergies
+                                </div>
+                                <div class="label-middle">
+                                    :
+                                </div>
+                                <div class="label-right">
+                                    {{pet.allergies}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div class="main-right-left">
+                        <div class="main-right-left-top">
+                            <div class="main-right-left-top-left">
+                                <img class="image-size-user" src="/assets/Images/Pet-owner.jpg" alt="">
+                            </div>
+                            <div class="main-right-left-top-right">
+                                <div class="label1">
+                                    Pet Owner
+                                </div>
+                                <div class="label2">
+                                    {{petowner.name}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-right-left-bottom">
+                            <div class="span-label1">
+                                <span>{{petowner.email}}</span>
+                            </div>
+                            <div class="span-label2">
+                                <span>{{petowner.mobile}}</span>
+                            </div>
+                            <div class="span-label3">
+                                <span>{{petowner.location}}
+                                    <br> {{petowner.pincode}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-right-right">
+                        <mat-card class="mat-button">
+                            <button class="mat-btn">Book Appointment</button>
+                        </mat-card>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+        <div class="container-second">
+            <div class="container-second-left">
+                <mat-card class="mat-top">
+                    <div class="mat-container">
+                        <div class="mat-container-top">
+                            Vitals
+                        </div>
+                        <div class="mat-container-bottom">
+                            <div class="mat-container-bottom-top">
+                                <div class="icon1">
+                                    <i class="fa-solid fa-heart-pulse" id="icon-size"></i>
+                                </div>
+                                <div class="icon2">
+                                    <i class="fa-solid fa-temperature-three-quarters" id="icon-size"></i>
+                                </div>
+                                <div class="icon3">
+                                    <i class="fa-solid fa-lungs" id="icon-size"></i>
+                                </div>
+                            </div>
+                            <div class="mat-container-bottom-bottom">
+                                <div class="label-vitals1">
+                                    79
+                                </div>
+                                <div class="label-vitals2">
+                                    BPM
+                                </div>
+                                <div class="label-vitals1">
+                                    37
+                                </div>
+                                <div class="label-vitals2">
+                                    C
+                                </div>
+                                <div class="label-vitals1">
+                                    14
+                                </div>
+                                <div class="label-vitals2">
+                                    BPM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card>
+                <mat-card class="mat-middle">
+                    <div class="mat-container">
+                        <div class="mat-container-top">
+                            Tests
+                        </div>
+                        <div class="mat-middle-bottom">
+                            <div class="test-data">
+                                ECG
+                            </div>
+                        </div>
+                    </div>
+                </mat-card>
+                <mat-card class="mat-bottom">
+                    <div class="mat-container">
+                        <div class="mat-container-top">
+                            Symptoms
+                        </div>
+                        <div class="mat-middle-bottom">
+                            <div class="test-data">
+                                Vomiting
+                            </div>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+            <div class="container-second-right">
+                <mat-card class="mat-side">
+                    <div class="mat-side-container">
+                        <div class="mat-side-container-top">
+                            Prescription
+                        </div>
+                        <div class="mat-side-container-bottom">
+                            <div class="prescitpion-container">
+                                <div class="prescription-left">
+                                    <div class="label-top">
+                                        <label for="">#ID-231231</label>
+                                    </div>
+                                    <div class="label-prescription">
+                                        1. Crocin
+                                    </div>
+                                    <div class="label-prescription">
+                                        2. Doxepin
+                                    </div>
+                                </div>
+                                <div class="prescription-right">
+                                    <div class="label-inner-top">
+                                        <label for="">28<sup>th</sup> March 2020</label>
+                                    </div>
+                                    <div class="label-inner-bottom">
+                                        <label for="">10:30 AM</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prescitpion-container">
+                                <div class="prescription-left">
+                                    <div class="label-top">
+                                        <label for="">#ID-231231</label>
+                                    </div>
+                                    <div class="label-prescription">
+                                        1. Crocin
+                                    </div>
+                                    <div class="label-prescription">
+                                        2. Doxepin
+                                    </div>
+                                </div>
+                                <div class="prescription-right">
+                                    <div class="label-inner-top">
+                                        <label for="">28<sup>th</sup> March 2020</label>
+                                    </div>
+                                    <div class="label-inner-bottom">
+                                        <label for="">10:30 AM</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prescitpion-container">
+                                <div class="prescription-left">
+                                    <div class="label-top">
+                                        <label for="">#ID-231231</label>
+                                    </div>
+                                    <div class="label-prescription">
+                                        1. Crocin
+                                    </div>
+                                    <div class="label-prescription">
+                                        2. Doxepin
+                                    </div>
+                                </div>
+                                <div class="prescription-right">
+                                    <div class="label-inner-top">
+                                        <label for="">28<sup>th</sup> March 2020</label>
+                                    </div>
+                                    <div class="label-inner-bottom">
+                                        <label for="">10:30 AM</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+        <div class="container-third">
+            <div class="container-third-top">
+                Appointment History
+            </div>
+            <div class="container-third-bottom">
+                <div class="contain-inner">
+                    <mat-card class="mat-card-side">
+                        <div class="single-container">
+                            <div class="single-top-container">
+                                <div class="image-name-container">
+                                    <div class="image-container">
+                                        <img class="image-size1" src="/assets/Images/dog.jpg" alt="">
+                                    </div>
+                                    <div class="name-container">
+                                        <div class="name-container-adjust">name</div>
+                                        <div class="name-container-adjust1">gender,age years</div>
+                                        <div class="name-container-adjust1"> Owner: owner</div>
+                                    </div>
+                                </div>
+                                <div class="date-contact-container">
+                                    <div class="date-time-container">
+                                        <div class="time-container-adjust">10:30</div>
+                                        <div class="date-container-adjust">11-10-2022</div>
+                                    </div>
+                                    <div class="contact-container">
+                                        <i id="i-1" class="fa-solid fa-message "></i>
+                                        <i id="i-2" class="fa-solid fa-phone "></i>
+                                        <i id="i-2" class="fa-solid fa-video "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-bottom-container">
+
+                                <div class="bottom-details">
+                                    <button class="btn_details" [routerLink]="['/viewDetails']">Details</button>
+                                </div>
+                                <div class="bottom-feedback">
+                                    <button class="btn_feedback">Feedback</button>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-card>
+                    <mat-card class="mat-card-side">
+                        <div class="single-container">
+                            <div class="single-top-container">
+                                <div class="image-name-container">
+                                    <div class="image-container">
+                                        <img class="image-size1" src="/assets/Images/dog.jpg" alt="">
+                                    </div>
+                                    <div class="name-container">
+                                        <div class="name-container-adjust">name</div>
+                                        <div class="name-container-adjust1">gender,age years</div>
+                                        <div class="name-container-adjust1"> Owner: owner</div>
+                                    </div>
+                                </div>
+                                <div class="date-contact-container">
+                                    <div class="date-time-container">
+                                        <div class="time-container-adjust">10:30</div>
+                                        <div class="date-container-adjust">11-10-2022</div>
+                                    </div>
+                                    <div class="contact-container">
+                                        <i style="margin-left: 8px ; color:red;" class="fa-solid fa-message "></i>
+                                        <i style="margin-left: 10px ; color:red;" class="fa-solid fa-phone "></i>
+                                        <i style="margin-left: 10px ; color:red;" class="fa-solid fa-video "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-bottom-container">
+                                <div class="bottom-details">
+                                    <button class="btn_details" [routerLink]="['/viewDetails']">Details</button>
+                                </div>
+                                <div class="bottom-feedback">
+                                    <button class="btn_feedback">Feedback</button>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-card>
+                    <mat-card class="mat-card-side">
+                        <div class="single-container">
+                            <div class="single-top-container">
+                                <div class="image-name-container">
+                                    <div class="image-container">
+                                        <img class="image-size1" src="/assets/Images/dog.jpg" alt="">
+                                    </div>
+                                    <div class="name-container">
+                                        <div class="name-container-adjust">name</div>
+                                        <div class="name-container-adjust1">gender,age years</div>
+                                        <div class="name-container-adjust1"> Owner: owner</div>
+                                    </div>
+                                </div>
+                                <div class="date-contact-container">
+                                    <div class="date-time-container">
+                                        <div class="time-container-adjust">10:30</div>
+                                        <div class="date-container-adjust">11-10-2022</div>
+                                    </div>
+                                    <div class="contact-container">
+                                        <i style="margin-left: 8px ; color:red;" class="fa-solid fa-message "></i>
+                                        <i style="margin-left: 10px ; color:red;" class="fa-solid fa-phone "></i>
+                                        <i style="margin-left: 10px ; color:red;" class="fa-solid fa-video "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-bottom-container">
+                                <div class="bottom-details">
+                                    <button class="btn_details" [routerLink]="['/viewDetails']">Details</button>
+                                </div>
+                                <div class="bottom-feedback">
+                                    <button class="btn_feedback">Feedback</button>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-card>
+                    <mat-card class="mat-card-side">
+                        <div class="single-container">
+                            <div class="single-top-container">
+                                <div class="image-name-container">
+                                    <div class="image-container">
+                                        <img class="image-size1" src="/assets/Images/dog.jpg" alt="">
+                                    </div>
+                                    <div class="name-container">
+                                        <div class="name-container-adjust">name</div>
+                                        <div class="name-container-adjust1">gender,age years</div>
+                                        <div class="name-container-adjust1"> Owner: owner</div>
+                                    </div>
+                                </div>
+                                <div class="date-contact-container">
+                                    <div class="date-time-container">
+                                        <div class="time-container-adjust">10:30</div>
+                                        <div class="date-container-adjust">11-10-2022</div>
+                                    </div>
+                                    <div class="contact-container">
+                                        <i id="i-1" class="fa-solid fa-message "></i>
+                                        <i id="i-2" class="fa-solid fa-phone "></i>
+                                        <i id="i-2" class="fa-solid fa-video "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-bottom-container">
+                                <div class="bottom-details">
+                                    <button class="btn_details" [routerLink]="['/viewDetails']">Details</button>
+                                </div>
+                                <div class="bottom-feedback">
+                                    <button class="btn_feedback">Feedback</button>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

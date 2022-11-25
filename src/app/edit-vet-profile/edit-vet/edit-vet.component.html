@@ -1,0 +1,101 @@
+<div class="vets-body">
+  <div class="vets-container">
+    <form [formGroup]="editForm">
+      <div class="vet-edit">
+        <div class="edit-profile-top">
+          <div class="edit-profile">
+            Edit Profile
+          </div>
+          <div class="update-details-bottom">
+            <div class="update-details">
+              Update account details
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vet-image">
+        <div class="profile-image">
+          <img class="image-size" src="/assets/Images/Doctor.jpg" alt="">
+          <i class="fa-solid fa-camera" style="margin-top: 50px; margin-left:-10px; margin-right:-20px;"></i>
+        </div>
+        <div class="profile-name">
+          <div class="profilename-top">
+            <div class="names">
+              <label for="name">Name</label>
+            </div>
+          </div>
+          <div class="profilename-bottom">
+            <div class="profile-name">
+              <input type="text" formControlName="editName" class="input">
+              <input type="number" formControlName="docId" class="input" hidden>
+              <input type="text" formControlName="image" class="input" hidden>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="npino">
+        <div class="npino-top">
+          <div class="npihead">
+            <label for="npinum">NPI No</label>
+          </div>
+        </div>
+        <div class="npino-bottom">
+          <input type="number" formControlName="editNPINo" class="input">
+        </div>
+      </div>
+      <div class="mobile">
+        <div class="mobile-top">
+          <div class="mob">
+            <label for="mobileno">Mobile</label>
+          </div>
+        </div>
+        <div class="mobile-bottom">
+          <div class="mobileno-code">
+            <div class="input1">+41
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="mobilenum">
+            <input type="text" formControlName="editMobile" class="input">
+          </div>
+        </div>
+      </div>
+      <div class="e-mail">
+        <div class="email-top">
+          <div class="emailhead">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="email-bottom">
+          <input type="text" formControlName="editEmail" class="input">
+        </div>
+      </div>
+      <div class="special">
+        <div class="special-top">
+          <div class="specialhead">
+            <label for="speciality">Speciality</label>
+          </div>
+        </div>
+        <div class="special-bottom">
+          <input type="text" formControlName="editSpeciality" class="input">
+        </div>
+      </div>
+      <div class="clinic">
+        <div class="clinic-top">
+          <div class="clinichead">
+            <label for="clinicaddress">Clinic Address</label>
+          </div>
+        </div>
+        <div class="clinic-bottom">
+          <textarea name="address"></textarea>
+          <input type="text" formControlName="editclinic" class="input" hidden>
+        </div>
+      </div>
+      <div class="button">
+        <button class="cancel-button" [routerLink]="['/profile']">Cancel</button>
+        &nbsp; &nbsp; &nbsp;
+        <button class="confirm" (click)="postData()">Confirm</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+.appointment-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #e4eef7;
+}
+
+.container {
+  width: 21%;
+  height: 78.7%;
+  margin-left: 3%;
+  margin-top: 1.5%;
+  padding: 0.2% 0 0 0;
+}
+
+.container-body {
+  width: 99%;
+  height: 98%;
+  margin: 2% 0 0.2% 1%;
+}
+
+.container-top {
+  width: 98.5%;
+  height:60%;
+  display: flex;
+
+}
+.container-bottom {
+  width: 98.5%;
+  height: 60%;
+  display: flex;
+
+}
+.container-right {
+  height: 100%;
+  width: 20%;
+
+}
+.container-left {
+  width: 80%;
+  height: 100%;
+
+}
+
+.Total{
+  font-size: 16px;
+  color: black;
+  width:20%;
+  height: 15%;
+  margin-top: 15px;
+  margin-left: 9px;
+}
+.confirmed{
+  font-size: 16px;
+  color: black;
+  width:20%;
+  height: 15%;
+  margin-top: 15px;
+  margin-left: 9px;
+}
+.closed{
+  font-size: 16px;
+  color: black;
+  width:20%;
+  height: 15%;
+  margin-top: 15px;
+  margin-left: 9px;
+}
+.cancelled{
+  font-size: 16px;
+  color: black;
+  width:20%;
+  height: 15%;
+  margin-top: 15px;
+  margin-left: 9px;
+}
+.icon{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background: #ffc0c0;
+  padding:3px;
+  border-radius:50px;
+}
+
+.number1{
+  font-size:25px;
+  font-style: normal;
+  width:30%;
+  height:100%;
+  margin-left:15px;
+}
+.number2{
+  font-size:25px;
+  font-style: normal;
+  width:30%;
+  height:100%;
+ 
+}
+.number3{
+  font-size:25px;
+  font-style: normal;
+  width:30%;
+  height:100%;
+  
+}
+.number4{
+  font-size:25px;
+  font-style: normal;
+  width:30%;
+  height:100%;
+  
+}

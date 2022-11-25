@@ -1,0 +1,92 @@
+<div class="pets-body">
+    <div class="pet-top">
+        <div class="pet-container">
+          <div class="pet-left">
+            <p>All Pets</p>
+          </div>
+          <div class="pet-right">
+            <div class="pet-search">
+              <mat-card class="search_mat">
+                <input type="text" id="search" placeholder="Search">
+              </mat-card>
+            </div>
+            <div class="pet-filter">
+              <mat-card class="filter_mat">
+                <input type="text" id="filter" placeholder="Filter">
+              </mat-card>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pet-middle">
+        <div class="middle-top">
+          <div class="middle-container">
+            <div class="middle-inner">
+              <p>Recently Consulted</p>
+            </div>
+          </div>
+        </div>
+        <div class="middle-bottom">
+          <mat-card class="mid-container" *ngFor="let pet of pets"><a [routerLink]="['/petdetails']">
+            <div class="mid-container-body">
+              <div class="pet-image">
+                <img class="image-size" src="/assets/Images/dog.jpg" alt="">
+              </div>
+              <div class="pet-data">
+                <div class="name">
+                  {{pet.petName}}
+                </div>
+                <div class="speciality">
+                  {{pet.gender}}, {{pet.age}} year
+                </div>
+                <div class="phone">
+                  <div class="ph-left">
+                    Owner:
+                  </div> 
+                  <div class="ph-right">
+                    {{pet.parentName}}
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </a>
+          </mat-card>
+        </div>
+      </div>
+      <div class="pet-bottom">
+        <div class="bottom-top">
+          <div class="bottom-container">
+            <div class="bottom-inner">
+              <p>All Pets</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bottom">
+          <div class="single-container">
+            <mat-card class="bot-container" *ngFor="let pet of pets">
+              <div class="bot-container-body">
+                <div class="pets-image">
+                  <img class="image-sizes" src="/assets/Images/dog.jpg" alt="">
+                </div>
+                <div class="pets-data">
+                  <div class="name">
+                    {{pet.petName}}
+                  </div>
+                  <div class="speciality">
+                    {{pet.gender}}, {{pet.age}} year
+                  </div>
+                  <div class="phone">
+                    <div class="ph-left">
+                      Owner:
+                    </div> 
+                    <div class="ph-right">
+                      {{pet.parentName}}
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+</div>

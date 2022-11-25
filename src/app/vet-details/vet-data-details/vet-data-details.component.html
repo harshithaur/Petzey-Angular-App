@@ -1,0 +1,128 @@
+<div class="vets-body">
+    <div class="container-top-data">
+        <span>
+            <a class="back_app" [routerLink]="['/allpet']">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Appointments
+            </a>
+        </span>      
+    </div>
+    <mat-card class="container">
+        <div class="container-body">
+            <div class="container-top">
+                <div class="top-container">
+                    <div class="top-left">
+                        <p>Vet Details</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-bottom">
+                <div class="bottom-left">
+                    <img class="image-size" src="/assets/Images/dog.jpg" alt="">
+                </div>
+                <div class="bottom-middle">
+                    <div class="middle-name">
+                        <div class="name">Name</div>
+                        <div class="dot">:</div>
+                        <div class="name-value">Dr.John Doe</div>
+
+                    </div>
+
+                    <div class="middle-npi-no">
+                        <div class="name">NPI NO</div>
+                        <div class="dot">:</div>
+                        <div class="name-value">659862111</div>
+                    </div>
+
+                    <div class="middle-speciality">
+                        <div class="name">Speciality</div>
+                        <div class="dot">:</div>
+                        <div class="name-value">NAVLE</div>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <div class="middle-mobile">
+                        <div class="name1">Mobile</div>
+                        <div class="dot">:</div>
+                        <div class="name-value">Dr.John Doe</div>
+
+                    </div>
+
+                    <div class="middle-email">
+                        <div class="name1">Email</div>
+                        <div class="dot">:</div>
+                        <div class="name-value">659862111</div>
+                    </div>
+
+                    <div class="middle-clinic">
+                        <div class="name1">Clinic</div>
+                        <div class="dot">:</div>
+                        <div class="name-value1"><textarea name="" id="t-area" cols="18"
+                                rows="2">st.john's clinic</textarea></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </mat-card>
+
+    <div class="bottom-container">
+        <div class="appointment-history-and-date">
+            <div class="appointment-history">
+                <span>Appointment History</span>
+            </div>
+            <div class="dates">
+                <mat-card class="dates_mat">
+                    <input type="date" value="2017-06-01" id="dates">
+                </mat-card>
+            </div>
+        </div>
+
+        <div class="all-cards-container">
+            <div class="all-cards-inner-container">
+                <mat-card class="all-cards-container-mat">
+                    <div class="single-container">
+                        <div class="single-top-container">
+                            <div class="image-name-container">
+                                <div class="image-container">
+                                    <img class="image-size1" src="/assets/Images/dog.jpg" alt="">
+                                </div>
+                                <div class="name-container">
+                                    <div class="name-container-adjust">name</div>
+                                    <div class="name-container-adjust1">gender,age years</div>
+                                    <div class="name-container-adjust1"> Owner: owner</div>
+                                </div>
+                            </div>
+                            <div class="date-contact-container">
+                                <div class="date-time-container">
+                                    <div class="time-container-adjust">10:30</div>
+                                    <div class="date-container-adjust">11-10-2022</div>
+                                </div>
+                                <div class="contact-container">
+                                    <i style="margin-left: 8px ; color:red;" class="fa-solid fa-message " ></i>
+                                    <i style="margin-left: 10px ; color:red;"class="fa-solid fa-phone "></i>
+                                    <i style="margin-left: 10px ; color:red;"class="fa-solid fa-video "></i>
+                
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="single-bottom-container">
+                            
+                                <div class="bottom-details">
+                                    <button class="btn_details" [routerLink]="['/viewDetails']">Details</button>
+                                </div>
+                                <div class="bottom-feedback">
+                                    <button class="btn_feedback">Feedback</button>
+                                </div>
+                        </div>
+                    </div>
+                </mat-card>
+
+              
+            </div>
+        </div>
+    </div>
+</div>

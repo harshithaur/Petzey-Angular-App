@@ -1,0 +1,79 @@
+<div class="doc-profile-body">
+
+
+    <mat-card class="container">
+        <div class="container-body">
+            <!-- code here -->
+            <!-- <div>
+                
+                
+        
+                </div>  -->
+            <div class="container-top">
+                <div class="top-container">
+                    <div class="top-left">
+                        <p>Account Details</p>
+                        <div class="p">Manage Your Account Details here.</div>
+                    </div>
+
+                    <div class="top-right">
+                        <div class="btn_container">
+                            <button class="edit_btn" (click)="data(vetData.doctorId)" [routerLink]="['/editvet']">Edit</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-bottom">
+                <div class="bottom-left">
+                    <img class="image-size" src="/assets/Images/Doctor.jpg" alt="">
+                </div>
+                <div class="bottom-middle">
+                    <div class="middle-name">
+                        <div class="name">Name</div>
+                        <div class="dot">:</div>
+                        <div class="name-value">Dr. {{vetData.name}}</div>
+
+                    </div>
+
+                    <div class="middle-npi-no">
+                        <div class="name">NPI NO</div>
+                        <div class="dot">:</div>
+                        <div class="name-value">{{vetData.npiNumber}}</div>
+                    </div>
+
+                    <div class="middle-speciality">
+                        <div class="name">Speciality</div>
+                        <div class="dot">:</div>
+                        <div class="name-value">{{vetData.speciality}}</div>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <div class="middle-mobile">
+                        <div class="name1">Mobile</div>
+                        <div class="dot">:</div>
+                        <div class="name-value">{{vetData.mobileNo}}</div>
+
+                    </div>
+
+                    <div class="middle-email">
+                        <div class="name1">Email</div>
+                        <div class="dot">:</div>
+                        <div class="name-value">{{vetData.email}}</div>
+                    </div>
+
+                    <div class="middle-clinic">
+                        <div class="name1">Clinic</div>
+                        <div class="dot">:</div>
+                        <div class="name-value1"><textarea name="" id="t-area" cols="18" rows="3" style="font-size: 13px;font-weight:550;">{{clinic.name}}</textarea></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </mat-card>
+
+
+</div>

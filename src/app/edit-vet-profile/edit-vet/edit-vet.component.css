@@ -1,0 +1,280 @@
+.vets-body {
+  background-color: #e4eef7;
+  width: 100%;
+  height: 94%;
+  padding-top: 3%;
+}
+
+.vets-container {
+  width: 25%;
+  height: 100%;
+  margin-left: 35%;
+  border-radius: 2%;
+  background-color: black;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 2%;
+}
+
+.vet-edit {
+  width: 100%;
+  height: 13%;
+}
+
+.edit-profile-top {
+  width: 100%;
+  height: 50%;
+}
+
+.update-details-bottom {
+  width: 100%;
+  height: 50%;
+}
+
+.edit-profile {
+  font-weight: 550;
+  margin-left: 5%;
+  padding-top: 4%;
+}
+
+.update-details {
+  font-weight: 300;
+  padding-top: 1%;
+  margin-left: 5%;
+  font-size: 11px;
+}
+
+.vet-image {
+  width: 100%;
+  height: 17%;
+  display: flex;
+}
+
+.profile-image {
+  width: 30%;
+  height: 100%;
+}
+
+#t-area {
+  border: none;
+  resize: none;
+}
+
+.image-size {
+  border-radius: 50%;
+  width: 85%;
+  height: 70%;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+
+.profile-name {
+  width: 50%;
+  height: 100%;
+}
+
+.profilename-top {
+  width: 100%;
+  height: 40%;
+
+}
+
+.profilename-bottom {
+  width: 100%;
+  height: 50%;
+}
+
+.names {
+  font-weight: 400;
+  font-size: 13px;
+  margin-left: 6%;
+  padding-top: 6%;
+
+}
+
+.profile-name {
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 5%;
+}
+
+.input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: groove;
+  width: 120px;
+}
+
+input{
+  outline:none;
+}
+
+.npino {
+  width: 80%;
+  height: 10%;
+  margin-left: 5%;
+}
+
+.npino-top {
+  width: 100%;
+  height: 50%;
+}
+
+.npihead {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 1%;
+}
+
+.npino-bottom {
+  width: 100%;
+  height: 50%;
+}
+
+.input1 {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: groove;
+  width: 95%;
+}
+
+.input1:focus{
+  outline:none;
+}
+
+.mobile {
+  width: 80%;
+  height: 10%;
+  margin-left: 5%;
+}
+
+.mobile-top {
+  width: 100%;
+  height: 50%;
+}
+
+.mob {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 3%;
+}
+
+.mobile-bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.mobileno-code {
+  width: 25%;
+  height: 100%;
+}
+
+.mobilenum {
+  width: 75%;
+  height: 100%;
+}
+
+.e-mail {
+  width: 80%;
+  height: 10%;
+  margin-left: 5%;
+}
+
+.email-top {
+  width: 100%;
+  height: 50%;
+}
+
+.emailhead {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 1%;
+}
+
+.email-bottom {
+  width: 100%;
+  height: 50%;
+}
+
+.special {
+  width: 80%;
+  height: 10%;
+  margin-left: 5%;
+}
+
+.special-top {
+  width: 100%;
+  height: 50%;
+}
+
+.specialhead {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 1%;
+}
+
+.special-bottom {
+  width: 100%;
+  height: 50%;
+}
+
+.clinic {
+  width:90%;
+  height: 16%;
+  margin-left: 5%;
+}
+
+.clinic-top {
+  width: 100%;
+  height: 15%;
+  margin-bottom: 4%;
+}
+
+.clinichead {
+  font-weight: 400;
+  font-size: 13px;
+}
+textarea{
+  width: 85%;
+  height: 40%;
+  resize: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+.button {
+  width:90%;
+  height: 5.5%;
+  margin-left: 5%;
+  display: flex;
+}
+
+.cancel-button {
+  width: 40%;
+  height: 100%;
+  background-color: #fafaff;
+  margin-left: 2.5%;
+  margin-right: 2%;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 12px;
+}
+
+.confirm {
+  width: 40%;
+  height: 100%;
+  background-color: #e6421e;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 12px;
+}

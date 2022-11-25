@@ -1,0 +1,78 @@
+<div class="pets-body">
+    <form action="">   
+            <h4>Pet Profile</h4>
+            <p>Add Pet Details</p>
+            <div class="image_cont">
+                <img src="./assets/Images/dog.jpg" class="doggo_op" alt="doggo">
+                <i class="fa-solid fa-camera" style="margin-top: 50px; margin-left:-10px;"></i>
+                <h5 class="naming_css">Name</h5>
+                <input type="text" class="petz_name">
+            </div>
+            <div class="specy">
+                <p style="font-size: 12px;">Species</p>
+                <div class="radio_but">
+                    <input type="radio" name="anim" value="dog" class="radio_style">
+                    <div class="animal1">
+                    <p class="anim_style">Dog</p>
+                    </div>
+                    <!-- &nbsp;&nbsp;&nbsp; -->
+                    <input type="radio" name="anim" value="cat" class="radio_style">
+                    <div class="animal1">
+                    <p class="anim_style">Cat</p>
+                    </div>
+                    <!-- &nbsp;&nbsp;&nbsp; -->
+                    <input type="radio" name="anim" value="reptile" class="radio_style">
+                    <div class="animal1">
+                    <p class="anim_style">Reptile</p>
+                    </div>  
+                    <!-- &nbsp;&nbsp;&nbsp; -->
+                    <input type="radio" name="anim" value="others" class="radio_style">
+                    <div class="animal1">
+                    <p class="anim_style">Others</p>
+                    </div>
+                    <!-- &nbsp;&nbsp;&nbsp; -->
+                </div>
+            </div>
+            <div>
+                <p style="font-size: 12px;">Gender</p>
+                <div class="gend_cls">
+                    <input type="radio" class="gend_name" name="gender" value="male">
+                    <p class="gend_name2">Male</p>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" class="gend_name" name="gender" value="female">
+                    <p class="gend_name2">Female</p>
+                </div>
+            </div>
+            <div class="dob">
+                <p>Date of birth</p>
+                <input type="date" class="date_birth">
+                <p class="anim_age">Age</p>
+                <input type="text" class="anim_aze">
+            </div>
+            <div class="bld_grp_main">
+                <div class="bld_name">
+                    <p>Blood group</p>
+                </div>
+                <div class="inp_txt1">
+                    <input type="text" class="blood_grp">
+                </div>
+            </div>
+            <div class="allergy_main">
+                <div class="allergy_name">
+                    <p>Allergies</p>
+                </div>
+                <div class="allergy_inp">
+                    <input type="text" class="inp_txt2">
+                </div>
+            </div>
+            <div class="buttons1">
+                <div class="cancel">
+                <button class="cancel_but" [routerLink]="['/profile']">Cancel</button>
+                </div>
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <div class="confirm">
+                <button class="submit_but">Confirm</button>
+                </div>
+            </div>
+    </form>
+</div>

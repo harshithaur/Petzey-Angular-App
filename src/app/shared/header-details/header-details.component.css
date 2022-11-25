@@ -1,0 +1,56 @@
+.header-body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 17%;
+    height: 100%;
+    float: right;
+    display: flex;
+}
+
+.container-left {
+    width: 65%;
+    height: 100%;
+    padding-top: 6px;
+}
+
+.profile {
+    width: 100%;
+    height: 34%;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.label_name {
+    font-family: "Gill Sans", sans-serif;
+    height: 80%;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.logout {
+    width: 100%;
+    height: 50%;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.label_logout {
+    font-family: "Gill Sans", sans-serif;
+    height: 30%;
+    padding-left: 20px;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.container-right {
+    width: 35%;
+    height: 100%;
+    padding-top: 5%;
+}
+
+.img_round {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}

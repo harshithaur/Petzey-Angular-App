@@ -1,0 +1,155 @@
+.appointment-body {
+  width: 100%;
+  height: 100%;
+  background-color: #e4eef7;
+}
+
+.inline-calender {
+  width: 300px;
+}
+
+.form-container {
+  width: 98%;
+  height: 96.1%;
+  padding: 2% 0 0 2%;
+}
+
+form {
+  width: 98%;
+  height: 100%;
+}
+
+.form-inner {
+  width: 98%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.form-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.form-inner {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.new-appointment-top {
+  width: 95%;
+  height: 7%;
+  margin-left: 2.5%;
+  font-weight: 550;
+  font-size: 12px;
+}
+
+.back_app {
+  color: #040405;
+  text-decoration: none;
+}
+
+.new-appointment-bottom {
+  width: 95%;
+  height: 6%;
+  margin-left: 2.5%;
+  border-bottom: 1px solid #040405;
+  font-weight: 550;
+  font-size: 25px;
+}
+
+.header-details {
+  width: 100%;
+  height: 7%;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  font-weight: 450;
+  font-size: 17px;
+}
+
+.mat_input_container {
+  width: 100%;
+  height: 8%;
+  margin-left: 2.5%;
+  margin-bottom: 1.5%;
+}
+.date_time_container{
+  width:100%;
+  height: 5%;
+  margin-left: 2.5%;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+.adjust_date{
+  margin-top: 5.5%;
+}
+.adjust_icon{
+  display: flex;
+  height: 98%;
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 0.3%;
+}
+.mat_date_button{
+  width: 09%;
+  height: 95%;
+  padding: 0;
+}
+.mat_icon-Date{
+  font-size: 17px;
+  margin-top: 5.5%;
+  margin-left: 2%;
+}
+.date-container{
+  margin-left: 2.5%;
+}
+.inline-calender{
+  width: 25%;
+  height: 25%;
+  padding: 0;
+}
+.time-row{
+  width: 30%;
+  height: 23%;
+  margin-left: 2.5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.time-div{
+  margin-right: 2.5%;
+  margin-bottom: 2%;
+  height: 23%;
+  width: 16%;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.button {
+  width: 100%;
+  height: 7%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  display: flex;
+}
+
+.cancel-button {
+  width: 70px;
+  height: 30px;
+  background-color: #fafaff;
+  margin-left: 2.5%;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+}
+
+.Book-Appointment {
+  width: 120px;
+  height: 30px;
+  background-color: #e6421e;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 12px;
+}
+
+.color_change{
+  background-color: white;
+  border-radius: 5px;
+}

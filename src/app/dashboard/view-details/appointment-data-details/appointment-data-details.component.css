@@ -1,0 +1,21 @@
+.appointment-body {
+    background-color: #e4eef7;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .appointment-body::-webkit-scrollbar{
+    display: none;
+  }
+  .appointment-body{
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+  }
+.appointment-data{
+  width: 100%;
+  height: 400px;
+}
+.appointment-report{
+  height: 800px;
+  width: 100%;
+}

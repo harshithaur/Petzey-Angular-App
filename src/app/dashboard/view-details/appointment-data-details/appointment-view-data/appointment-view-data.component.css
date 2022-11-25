@@ -1,0 +1,269 @@
+.appointment-body {
+
+  width: 100%;
+  height: 100%;
+}
+
+
+.appointment-container {
+  width: 100%;
+  height: 7%;
+  margin-left: 3%;
+
+
+
+}
+
+.id {
+  width: 100%;
+  height: 8%;
+  font-size: 24px;
+  margin-left: 3%;
+
+
+}
+
+.calender {
+  width: 100%;
+  
+  height: 9%;
+  margin-left: 3%;
+  display: flex;
+}
+
+.calender-left {
+  width: 50%;
+  height: 100%;
+
+
+}
+
+.calender-right {
+  width: 50%;
+  height: 100%;
+
+}
+
+.Issues {
+  width: 100%;
+  height: 7%;
+  margin-left: 3%;
+
+}
+
+.reasons {
+  width: 100%;
+  height: 10%;
+  margin-left: 3%;
+  
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin-left: 3%;
+  display: flex;
+  }
+
+.container-right {
+  width: 50%;
+  height: 55%;
+ 
+  border-radius:1%;
+  
+
+}
+
+.container-left {
+  width: 50%;
+  height: 55%;
+  margin-left:3%;
+  border-radius:1%;
+ 
+}
+
+.image1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  
+}
+
+.img1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  
+}
+
+.pets {
+  height: 100%;
+  width: 50%;
+
+}
+
+.petimg {
+  height: 65%;
+  width: 30%;
+  border-radius: 50%;
+  margin-left: 6%;
+  margin-top: 5%;
+}
+
+.data1 {
+  height: 20%;
+  width: 100%;
+  margin-left: 14%;
+
+}
+
+.data2 {
+  height: 45%;
+  width: 100%;
+  margin-left: 14%;
+   margin-top:10%;
+}
+
+.img2 {
+  width: 50%;
+  height: 10%;
+  display: flex;
+
+}
+
+.vet1 {
+  width: 50%;
+  height: 100%;
+
+}
+
+.vet2 {
+  width: 50%;
+  height: 100%;
+
+
+}
+
+.docimg {
+  width: 50%;
+  height: 62%;
+  margin-left: 20%;
+  margin-top: 10%;
+
+  border-radius: 50%;
+
+
+}
+
+.petowner {
+  width: 70%;
+  height: 20%;
+  margin-left: 10%;
+  margin-top: 12%;
+ 
+}
+
+.names {
+  width: 70%;
+  height: 30%;
+  margin-left: 10%;
+  margin-top: 20%;
+  
+}
+
+.img2 {
+  width: 50%;
+  height: 100%;
+ 
+}
+
+.image2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  
+}
+
+.app1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  
+}
+
+.body {
+  width: 30%;
+  height: 100%;
+  
+}
+
+.Age {
+  width: 35%;
+  height: 20%;
+  margin-left: 35%;
+ 
+}
+
+.Gender {
+  width: 65%;
+  height: 20%;
+  margin-left: 35%;
+  
+}
+
+.body1 {
+  width: 50%;
+  height: 100%;
+ 
+}
+
+.Male {
+  width: 80%;
+  height: 20%;
+  
+}
+
+.year {
+  width: 80%;
+  height: 20%;
+}
+
+.app2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  
+}
+
+.date1 {
+  width: 55%;
+  height: 50%;
+  margin-top: 5%;
+  margin-left: 5%;
+ 
+}
+
+.date2 {
+  width: 50%;
+  height: 100%;
+ 
+}
+
+.john {
+  width: 55%;
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 69%;
+
+  border-radius: 50%;
+}
+
+.left2 {
+  width: 50%;
+  height: 100%;
+  
+}
+
+
+
+

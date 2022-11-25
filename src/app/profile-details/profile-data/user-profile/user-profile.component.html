@@ -1,0 +1,96 @@
+<div class="user-profile-body">
+  <mat-card class="container-first">
+    <div class="container-body">
+      <!-- code here -->
+      <div class="container-top">
+        <div class="top-container">
+          <div class="top-left">
+            <p>Account Details</p>
+            <div class="p">Manage your team members and their account permissions here.</div>
+          </div>
+          <div class="top-right">
+            <div class="btn_container">
+              <button class="edit_btn" [routerLink]="['/edituser']">Edit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-bottom">
+        <div class="container-bottom-left">
+          <div class="bottom-left">
+            <img class="image-size" src="./assets/Images/Pet-owner.jpg" alt="">
+          </div>
+          <div class="bottom-right">
+            <div class="middle-name">
+              <div class="name">Name</div>
+              <div class="dot">:</div>
+              <div class="name-value">{{petOwnerData.parentName}}</div>
+            </div>
+            <div class="middle-mobile">
+              <div class="name">Mobile</div>
+              <div class="dot">:</div>
+              <div class="name-value">{{petOwnerData.mobile}}</div>
+            </div>
+            <div class="middle-location">
+              <div class="name">Location</div>
+              <div class="dot">:</div>
+              <div class="name-value">{{petOwnerData.location}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+
+  <!---------------------------------------------------------------------------->
+
+  <mat-card class="container-second">
+    <div class="container-body">
+      <!-- code here -->
+      <div class="container-second-top">
+        <div class="second-top-container">
+          <div class="second-top-left">
+            <p>Pet Details</p>
+            <div class="p1">Manage Your Pet here.</div>
+          </div>
+          <div class="second-top-right">
+            <div class="pet_container">
+              <button class="pet_btn" [routerLink]="['/addPet']">New Pet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-second-bottom">
+        <div class="second-bottom-left" *ngFor="let pet of pets">
+          <mat-card class="pet-mat">
+            <div class="pet-mat-body">
+              <div class="pet-mat-left">
+                <img class="image-size1" src="/assets/Images/dog.jpg" alt="">
+              </div>
+              <div class="pet-mat-middle">
+                <div class="mat-mid-container">
+                  <div class="mat-middle-top">
+                    <label for="" class="name-size">{{pet.petName}}</label>
+                  </div>
+                  <div class="mat-middle-bottom">
+                    <label for="" class="y-size">{{pet.gender}}, {{pet.age}} Years</label>
+                  </div>
+                </div>
+              </div>
+              <div class="pet-mat-right">
+                <div>
+                  <i class="fa-solid fa-ellipsis-vertical" (click)="hide()"></i>
+                </div>
+                <div class="btn_sides" *ngIf="hide_button">
+                  <button class="btn_style" (click)="Edit(pet.petId)">
+                    Edit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>

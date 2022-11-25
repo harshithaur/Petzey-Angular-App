@@ -1,0 +1,107 @@
+<div class="appointment-body">
+    <div class="form-container">
+        <form [formGroup]="appointmentForm" (submit)="submitForm()">
+            <div class="form-inner">
+                <div class="new-appointment-top">
+                    <span>
+                        <a class="back_app" (click)="changeScreen()">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Back to Appointments
+                        </a>
+                    </span>
+                </div>
+                <div class="new-appointment-bottom">
+                    New Appointment
+                </div>
+
+                <div class="header-details">
+                    Veterinarian Details
+                </div>
+                <div class="mat_input_container">
+                    <mat-form-field appearance="legacy" style="width: 16%;" (click)="datetimehide()">
+                        <mat-label>Veterinarian</mat-label>
+                        <input matInput placeholder="Enter Name" formControlName="vet" [matAutocomplete]="autoVet">
+                        <mat-icon matSuffix>search</mat-icon>
+                        <mat-autocomplete #autoVet="matAutocomplete" [displayWith]="displayFnVet">
+                            <mat-option *ngFor="let vet of vetList" [value]="vet">
+                                {{vet.name}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </div>
+                <div class="date_time_container" *ngIf="datetime_hide">
+                    <mat-card class="mat_date_button" (click)="datehide()">
+                        <div class="adjust_icon">
+                            <mat-icon matSuffix class="mat_icon-Date">
+                                date_range
+                            </mat-icon>
+                            <div class="adjust_date">
+                                {{appointmentForm.get('appointmentDate')?.value}}
+                            </div>
+                        </div>
+
+                    </mat-card>
+                </div>
+                <div class="date-container" *ngIf="date_hide">
+                    <mat-card class="inline-calender">
+                        <mat-calendar [selected]="appointmentForm.get('appointmentDate')?.value"
+                            (selectedChange)="updateFormDate($event)">
+                        </mat-calendar>
+                    </mat-card>
+                </div>
+                <div class="time-row" *ngIf="datetime_hide">
+                    <div class="time-div" *ngFor="let time of timeArray">
+                        <div style="padding-left:15%;padding-top: 10%; width: 85%; height: 81%;"
+                        [ngClass]="{'color_change':appointmentForm.get('appointmentTime')?.value === time}"
+                            (click)="updateFormTime(time)">
+                                {{time}}
+                        </div>
+                    </div>
+                </div>
+                <div class="header-details">
+                    Patient Details
+                </div>
+                <div class="mat_input_container">
+                    <mat-form-field appearance="legacy" style="width: 16%;">
+                        <mat-label>Pet Name</mat-label>
+                        <input matInput formControlName="pet" placeholder="Enter Name" [matAutocomplete]="autoPet">
+                        <mat-icon matSuffix>search</mat-icon>
+                        <mat-autocomplete #autoPet="matAutocomplete" [displayWith]="displayFnForpet">
+                            <mat-option *ngFor=" let pet of petList" [value]="pet">
+                                {{pet.petName}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </div>
+                <div class="header-details">
+                    Other Details
+                </div>
+                <div class="mat_input_container">
+                    <mat-form-field appearance="legacy" style="width: 16%;">
+                        <mat-label>Pet Issues</mat-label>
+                        <input matInput placeholder="Enter Pet Issue" formControlName="issue"
+                            [matAutocomplete]="autoissue">
+                        <mat-icon matSuffix>search</mat-icon>
+                        <mat-autocomplete #autoissue="matAutocomplete" [displayWith]="displayFnForIssue">
+                            <mat-option *ngFor=" let issue of petIssueList" [value]="issue">
+                                {{issue.name}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </div>
+                <div class="mat_input_container">
+                    <mat-form-field appearance="legacy" style="width: 16%;">
+                        <mat-label>Reason</mat-label>
+                        <textarea matInput style="resize: none;" formControlName="reason"></textarea>
+                    </mat-form-field>
+                </div>
+
+                <div class="button">
+                    <button class="cancel-button" (click)="changeScreen()"> Cancel</button>
+                    &nbsp; &nbsp; &nbsp;
+                    <button class="Book-Appointment" type="submit">Book Appointment</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

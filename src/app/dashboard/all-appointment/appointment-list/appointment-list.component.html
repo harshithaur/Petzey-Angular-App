@@ -1,0 +1,73 @@
+<div class="appointment-body">
+    <!-- Code Here -->
+    <div class="appointment-top">
+        <div class="appointment-container">
+            <div class="appointment-left">
+                <p>All Appointments</p>
+            </div>
+            <div class="appointment-right">
+                <div class="new-appoimntment">
+                    <mat-card class="new_mat">
+                        <button class="btn_new_appointment" [routerLink]="['/addAppointment']">New Appointment</button>
+                    </mat-card> 
+                </div>
+                <div class="status">
+                    <mat-card class="status_mat">
+                        <select name="status" id="status">
+                            <option value="" selected disabled hidden>Status</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </mat-card>
+                </div>
+                <div class="dates">
+                    <mat-card class="dates_mat">
+                        <input  type="date" value="2017-06-01" id="dates">
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="appointment-bottom">
+        <!-- <p>{{appointment[0].appointmentId}}</p> -->
+        <mat-card class="container" *ngFor="let app of appointment">
+            <div class="single-container">
+                <div class="single-top">
+                    <div class="img-name-container">
+                        <div class="image-container">
+                            <img class="image-size" src="/assets/Images/dog.jpg" alt="">
+                        </div>
+                        <div class="name-container">
+                            <div class="name-container-adjust">{{app.petName}}</div>
+                            <!-- <div class="name-container-adjust1">{{app.pet.gender}},{{app.pet.age}} years</div> -->
+                            <div class="name-container-adjust1" style="margin-top: 10px;"> Owner: {{app.petOwnerName}}</div>
+                        </div>
+                    </div>
+                    <div class="date-contact-container">
+                        <div class="date-time-container">
+                            <div class="time-container-adjust">{{app.time}}</div>
+                            <div class="date-container-adjust">{{app.date}}</div>
+                        </div>
+                        <div class="contact-container">
+                            <i style="margin-left: 8px ; color:red;" class="fa-solid fa-message " ></i>
+                            <i style="margin-left: 10px ; color:red;"class="fa-solid fa-phone "></i>
+                            <i style="margin-left: 10px ; color:red;"class="fa-solid fa-video "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-bottom">
+                    <div class="bottom-details">
+                        <button class="btn_details" [routerLink]="['/viewDetails']">Details</button>
+                    </div>
+                    <div class="bottom-feedback">
+                        <button class="btn_feedback">Feedback</button>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+
+</div>

@@ -1,0 +1,84 @@
+<div class="user-body">
+    <div class="user-container">
+        <form  [formGroup]="userForm">
+            <div class="user-edit">
+                <div class="edit-profile-top">
+                    <div class="edit-profile">
+                        Edit Profile
+                    </div>
+                    <div class="update-details-bottom">
+                        <div class="update-details">
+                            Update account details
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-image">
+                <div class="profile-image">
+                    <img class="image-size" src="/assets/Images/Pet-owner.jpg" alt="">
+                    <i class="fa-solid fa-camera" style="margin-top: 50px; margin-left:-10px; margin-right:-20px;"></i>
+                </div>
+                <div class="profile-name">
+                    <div class="profilename-top">
+                        <div class="names">
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="profilename-bottom">
+                        <div class="profile-name">
+                            <input type="text" formControlName="userName" class="input">
+                            <input type="number" formControlName="petOwnerId" class="input" hidden>
+                            <input type="text" formControlName="gender" class="input" hidden>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gender">
+                <div class="gender-top">
+                    Gender
+                </div>
+                <div class="gender-radio">
+                    <div class="radio-data">
+                        <input type="radio"  name="gender" class="gen_radio">Mr
+                    </div>
+                    <div class="radio-data">
+                        <input type="radio" name="gender" class="gen_radio">Mrs
+                    </div>
+                    <div class="radio-data">
+                        <input type="radio" name="gender" class="gen_radio">Other
+                    </div>
+                </div>
+            </div>
+            <div class="mobile">
+                <div class="mobile-top">
+                    <div class="mob">
+                        <label for="mobileno">Mobile</label>
+                    </div>
+                </div>
+                <div class="mobile-bottom">
+                    <div class="mobileno-code">
+                        <div class="input1">
+                            <span>+41
+                                <i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="mobilenum">
+                        <input type="number" formControlName="userNumber" class="input1">
+                        <input type="text" formControlName="email" class="input1" hidden>
+                        <input type="text" formControlName="Image" class="input1" hidden>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <label for="location">Location</label>
+                <textarea name="location" formControlName="userlocation"></textarea>
+                <input type="number" formControlName="pincode" class="input" hidden>
+            </div>
+            <div class="button">
+                <button class="cancel-button" [routerLink]="['/profile']">Cancel</button>
+                &nbsp; &nbsp; &nbsp;
+                <button class="confirm" (click)="postData()">Confirm</button>
+            </div>
+        </form>
+    </div>
+</div>

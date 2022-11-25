@@ -1,0 +1,251 @@
+.pets-body {
+    background-color: #e4eef7;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .pet-top {
+    width: 100%;
+    height: 13%;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .pet-container {
+    width: 93%;
+    height: 98%;
+    margin-left: 3%;
+    border-bottom: 1px solid #aec5d8;
+    display: flex;
+  }
+  
+  .pet-left {
+    height: 40%;
+    width: 18%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 0.1%;
+    margin-top: 2.7%;
+    padding-top: 1%;
+  }
+  
+  .pet-right {
+    height: 60%;
+    width: 82%;
+    margin-top: 2.7%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .pet-search {
+    width: 32%;
+    height: 70%;
+    margin-left: 1.2%;
+  }
+  
+  .search_mat {
+    padding: 0.5% 0 0 0.8%;
+    height: 95%;
+    width: 98%;
+  }
+  
+  #search {
+    height: 90%;
+    width: 97.6%;
+    border: none;
+    font-size: smaller;
+  }
+  
+  .pet-filter {
+    width: 8%;
+    height: 70%;
+  }
+  
+  .filter_mat {
+    padding: 0.3% 0 0 4%;
+    height: 95%;
+    width: 98%;
+  }
+  
+  #filter {
+    height: 90%;
+    width: 90%;
+    border: none;
+    font-size: smaller;
+  }
+  
+  .pet-middle {
+    width: 100%;
+    height: 30.6%;
+  }
+  
+  .middle-top {
+    width: 100%;
+    height: 37%;
+  }
+  
+  .middle-container {
+    width: 93%;
+    height: 70%;
+    margin-left: 3%;
+    padding-top: 1.7%;
+    border-bottom: 1px solid #aec5d8;
+  }
+  
+  .middle-inner {
+    height: 54%;
+    width: 22%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    margin-left: 0.1%;
+    padding-top: 0.8%;
+  }
+  
+  .middle-bottom {
+    width: 100%;
+    height: 73%;
+    display: flex;
+  }
+  
+  .mid-container {
+    width: 21%;
+    height: 67%;
+    margin-left: 3%;
+    margin-top: 1%;
+    padding: 0.2% 0 0 0;
+  }
+  
+  .mid-container-body {
+    width: 99%;
+    height: 98%;
+    margin: 2% 0 0 0.5%;
+    display: flex;
+  }
+  
+  .pet-image {
+    width: 43%;
+    height: 98%;
+  }
+  
+  .image-size {
+    border-radius: 50%;
+    width: 70%;
+    height: 80%;
+    margin: 7.5% 0 0 15%;
+  }
+  
+  .pet-data {
+    width: 57%;
+    height: 91%;
+    padding-top: 3%;
+  }
+  
+  .name {
+    width: 100%;
+    height: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+  }
+  
+  .speciality {
+    width: 100%;
+    height: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -5%;
+    margin-bottom: 5%;
+  }
+  
+  .phone {
+    width: 100%;
+    height: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+  }
+  
+  .ph-right {
+    margin-left: 3%;
+    font-weight: bolder;
+  }
+  
+  .pet-bottom {
+    width: 100%;
+    height: 56.4%;
+  }
+  
+  .bottom-top {
+    width: 100%;
+    height: 14%;
+  }
+  
+  .bottom-container {
+    width: 93%;
+    height: 65%;
+    margin-left: 3%;
+    padding-top: 1.4%;
+    border-bottom: 1px solid #aec5d8;
+  }
+  
+  .bottom-inner {
+    height: 90%;
+    width: 18%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    margin-left: 0.1%;
+  
+  }
+  
+  .bottom-bottom {
+    width: 100%;
+    height: 86%;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .bottom-bottom::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .bottom-bottom {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .single-container {
+    width: 21.1%;
+    height: 32%;
+    margin: 1% 0 1% 3%;
+  }
+  
+  .bot-container {
+    width: 99%;
+    height: 99%;
+    padding: 0.2% 0 0 0.5%;
+  }
+  
+  .bot-container-body {
+    width: 99%;
+    height: 98%;
+    margin: 2% 0 0 0.5%;
+    display: flex;
+  }
+
+  .pets-image {
+    width: 43%;
+    height: 98%;
+  }
+  
+  .image-sizes {
+    border-radius: 50%;
+    width: 70%;
+    height: 80%;
+    margin: 10% 0 0 15%;
+  }
+  
+  .pets-data {
+    width: 57%;
+    height: 91%;
+    padding-top: 5%;
+  }

@@ -1,0 +1,167 @@
+.appointment-body {
+  background-color: #e4eef7;
+  width: 95%;
+  height: 100%;
+  margin-left: 3%;
+}
+.top{
+  width:83%;
+  height:5%;
+  display: flex;
+}
+.bottom{
+  width:83%;
+  height:95%;
+}
+.apreport{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  width:100%;
+  height:40%;
+  color: rgb(85, 85, 85);
+  margin-left:2%;
+}
+.ap1{
+  width:80%;
+  height:80%;
+  margin-top: 0.5%;
+}
+.button{
+  width:20%;
+  height:90%;
+  display:flex;
+  flex-direction: row-reverse;
+}
+.save{
+  color: red;
+  width:20%;
+  height:20%;
+  margin-right: 20%;
+  margin-top: 3.5%;
+}
+.report{
+  width:60%;
+  height:50%;
+  margin-top: 3.5%;
+  color: black;
+}
+.bottom1{
+
+  width:100%;
+  height:70%;
+  padding: 0.5% 0 0 0.5%;
+}
+.bottomhalf-left{
+  width:50%;
+  height:96%;
+  padding: 0.5% 0 0 0.5%;
+
+}
+.bottomhalf-right{
+  width:50%;
+  height:96%;
+  padding: 0.5% 0 0 0.5%;
+
+
+}
+.bottomhalf{
+  width:100%;
+  height:75%;
+  padding: 0.5% 0 0 0.5%;
+  margin-top: 2%;
+  display: flex;
+}
+.bottom3{
+    width:100%;
+    height:25%;
+    padding: 0.5% 0 0 0.5%;
+    margin-top: 2%;
+}
+.box1{
+  width:85%;
+  height:20%;
+  display: flex;
+  margin-left: 5%;
+}
+.bottom2{
+  width:100%;
+  height:27%;
+  padding: 0.5% 0 0 0.5%;
+  margin-top: 2%;
+}
+.mat-container-top{
+  width: 100%;
+  height: 5.5%;
+}
+.mat-container-top1{
+  width: 99%;
+  height: 13%;
+}
+.mat-container-top11{
+  width: 99%;
+  height: 16%;
+}
+.mat-container-top12{
+  width: 99%;
+  height: 50%;
+  margin-top: 2%;
+  display: flex;
+}
+.b1{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color:black;
+  margin-left:4.5%;
+}
+.b11{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color:black;
+  margin-left:4.5%;
+}
+.mat-container-bottom{
+  overflow-y: scroll;
+  width: 100%;
+  height: 91%;
+  margin-top: 2%;
+} 
+.mat-container-bottom::-webkit-scrollbar{
+  display: none;
+}
+.mat-container-bottom{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.address{
+  width: 80%;
+  height: 120%;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+.map{
+  width: 10%;
+  height: 10%;
+  margin-left: 2%;
+}
+.img4{
+  width:60%;
+  height:24px;
+  margin-left: 6%;
+}
+.text{
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  width: 60%;
+  height:40%;
+  margin-left: 10%;
+}
+.b2{
+  margin-top:2%;margin-left: 6%;
+  border: radius 0.5em; border: solid;
+  width: 90.4%;height: 20%;
+  border-width: thin thin thin thin; 
+}
